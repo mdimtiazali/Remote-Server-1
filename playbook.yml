@@ -1,0 +1,11 @@
+
+---
+- name: installing/uninstalling packages
+  hosts: 192.168.60.21
+  tasks: 
+   - name: install/uninstall
+     apt:
+      name: "{{a}}"
+      state: "{{b}}"
+      update_cache: "{{c}}"
+...

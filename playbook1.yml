@@ -1,0 +1,18 @@
+
+---
+- name: Creating Dir and Files
+  hosts: lb
+  tasks: 
+   - name: creating dir
+     file:  
+      name: d27
+      state: directory
+   - name: creating file
+     file:  
+      name: d27/file1
+      state: touch
+...
+
+
+
+

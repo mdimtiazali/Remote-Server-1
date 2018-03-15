@@ -1,0 +1,11 @@
+---
+- name: Creating User
+  hosts: lb
+  tasks:
+   - name: User1
+     user:
+      name: "{{a}}"
+      password: "{{b}}"
+      home: "{{c}}"
+      shell: "{{d}}"     
+...

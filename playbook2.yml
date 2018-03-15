@@ -1,0 +1,15 @@
+---
+- name: creating user and files
+  hosts: lb
+  tasks: 
+   - name: creating user
+     user:
+      name: ubuntu
+      password: imtiaz
+      home: /home/ubuntu
+      shell: /bin/bash
+   - name: creating file
+     file: 
+      name: /home/ubuntu/file1
+      state: touch
+...

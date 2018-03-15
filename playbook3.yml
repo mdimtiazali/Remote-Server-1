@@ -1,0 +1,14 @@
+---
+- name: Creating Playbook for Installing & Uninstalling packages
+  hosts: lb
+  tasks:
+   - name: Installing tree
+     apt:
+      name: tree
+      state: absent    
+   - name: Uninstalling git
+     apt:
+      name: git
+      state: present
+...
+      
